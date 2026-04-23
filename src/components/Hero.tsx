@@ -118,9 +118,11 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-              className="absolute -top-4 -left-4 glass shadow-card rounded-2xl px-4 py-3 flex items-center gap-3"
+              className="absolute -top-4 -left-4 glass shadow-card rounded-2xl p-2 pr-4 flex items-center gap-3"
             >
-              <div className="w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center text-accent text-xl">+</div>
+              <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center overflow-hidden">
+                <img src={quickPharmaLogo} alt="Quick Pharma logo" className="w-full h-full object-contain" />
+              </div>
               <div>
                 <div className="text-xs text-muted-foreground">Quick Pharma</div>
                 <div className="text-sm font-semibold">15 min delivery</div>
