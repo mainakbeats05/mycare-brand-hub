@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Bot, Stethoscope, Pill, Ambulance, FlaskConical, HeartHandshake } from "lucide-react";
+import quickPharmaLogo from "@/assets/quickpharma-logo.png";
 
 const services = [
   { icon: Bot, title: "AI Doctor Assistant", text: "Instant, intelligent triage and health guidance powered by medical AI.", soon: false },
   { icon: Stethoscope, title: "Online Consultation", text: "Connect with verified doctors via video, voice, or chat in minutes.", soon: false },
-  { icon: Pill, title: "Quick Pharma", text: "Essential medicines delivered to your door in under 15 minutes.", soon: false },
+  { icon: Pill, title: "Quick Pharma", text: "Essential medicines delivered to your door in under 15 minutes.", soon: false, logo: quickPharmaLogo },
   { icon: Ambulance, title: "Ambulance Booking", text: "One-tap emergency response with real-time tracking and dispatch.", soon: true },
   { icon: FlaskConical, title: "Home Lab Tests", text: "Sample collection at home with fast, accurate digital reports.", soon: true },
   { icon: HeartHandshake, title: "Nursing & Home Care", text: "Trained caregivers and nurses for elderly and recovery support.", soon: true },
-];
+] as const;
 
 export const Services = () => {
   return (
@@ -49,6 +50,16 @@ export const Services = () => {
               </div>
               <h3 className="font-display text-xl font-bold mb-2">{s.title}</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">{s.text}</p>
+              {"logo" in s && s.logo && (
+                <div className="mt-5 pt-5 border-t border-border/50">
+                  <img
+                    src={s.logo}
+                    alt="Quick Pharma — 15-Minute Medicines, powered by MyCare"
+                    loading="lazy"
+                    className="h-12 w-auto object-contain"
+                  />
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

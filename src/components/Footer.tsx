@@ -1,4 +1,5 @@
 import logo from "@/assets/mycare-logo.jpeg";
+import collabLogo from "@/assets/mycare-sevra.jpeg";
 
 export const Footer = () => {
   return (
@@ -31,6 +32,25 @@ export const Footer = () => {
               <li><a href="mailto:hello@mycare.health" className="hover:text-primary transition-colors">hello@mycare.health</a></li>
               <li><a href="#contact" className="hover:text-primary transition-colors">Partner with us</a></li>
             </ul>
+          </div>
+        </div>
+
+        <div className="mt-10 pt-8 border-t border-border/60">
+          <div className="flex flex-col items-center text-center gap-4">
+            <div className="text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+              In Collaboration With
+            </div>
+            <div className="w-full max-w-xl rounded-2xl overflow-hidden shadow-card border border-border/40 bg-[#050a1f]">
+              <img
+                src={collabLogo}
+                alt="MyCare in collaboration with SEVRA Ai"
+                loading="lazy"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <p className="text-sm text-muted-foreground max-w-md">
+              MyCare™ × <span className="font-semibold text-foreground">SEVRA Ai</span> — building the next generation of intelligent healthcare together.
+            </p>
           </div>
         </div>
 
