@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
+import mainakImg from "@/assets/team-mainak.png";
+import mandarImg from "@/assets/team-mandar.png";
+import bhumiImg from "@/assets/team-bhumi.png";
+import ayushImg from "@/assets/team-ayush.png";
 
 const team = [
-  { name: "Mainak Chakraborty", role: "Founder & CEO", initials: "MC" },
-  { name: "Mandar Magar", role: "Co-Founder", initials: "MM" },
-  { name: "Bhumi Changlani", role: "Managing Director", initials: "BC" },
-  { name: "Ayush Shukla", role: "Technical Director", initials: "AS" },
+  { name: "Mainak Chakraborty", role: "Founder & CEO", image: mainakImg },
+  { name: "Mandar Magar", role: "Co-Founder", image: mandarImg },
+  { name: "Bhumi Changlani", role: "Managing Director", image: bhumiImg },
+  { name: "Ayush Shukla", role: "Technical Director", image: ayushImg },
 ];
 
 export const Team = () => {
@@ -37,11 +41,14 @@ export const Team = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group bg-card rounded-3xl p-6 shadow-card border border-border/50 hover:shadow-elevated hover:-translate-y-1 transition-all"
             >
-              <div className="relative aspect-square rounded-2xl bg-gradient-hero overflow-hidden mb-5 flex items-center justify-center">
+              <div className="relative aspect-square rounded-2xl bg-gradient-hero overflow-hidden mb-5">
                 <div className="absolute inset-0 bg-mesh opacity-30" />
-                <span className="relative font-display text-5xl font-extrabold text-primary-foreground">
-                  {m.initials}
-                </span>
+                <img
+                  src={m.image}
+                  alt={`Portrait of ${m.name}, ${m.role} at MyCare`}
+                  loading="lazy"
+                  className="relative z-10 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-display text-lg font-bold">{m.name}</h3>
               <p className="text-sm text-muted-foreground mb-4">{m.role}</p>
