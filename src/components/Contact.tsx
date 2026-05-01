@@ -3,8 +3,8 @@ import { Mail, Phone, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const channels = [
-  { icon: Mail, label: "Email", value: "hello@mycare.health", href: "mailto:hello@mycare.health" },
-  { icon: Phone, label: "Phone", value: "+91 00000 00000", href: "tel:+910000000000" },
+  { icon: Mail, label: "Email", value: "getmycare108@gmail.com", href: "mailto:getmycare108@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+91 91016 13924", href: "tel:+919101613924" },
   { icon: Linkedin, label: "LinkedIn", value: "@mycare", href: "https://linkedin.com" },
 ];
 
@@ -33,7 +33,7 @@ export const Contact = () => {
                 We're always open to conversations with investors, providers, and partners who share our vision.
               </p>
               <Button variant="onPrimary" size="xl" asChild>
-                <a href="mailto:hello@mycare.health">
+                <a href="mailto:getmycare108@gmail.com">
                   Partner with Us <ArrowRight size={18} />
                 </a>
               </Button>

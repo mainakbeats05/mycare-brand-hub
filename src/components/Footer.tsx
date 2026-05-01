@@ -29,7 +29,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-sm uppercase tracking-widest text-foreground/70">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="mailto:hello@mycare.health" className="hover:text-primary transition-colors">hello@mycare.health</a></li>
+              <li><a href="mailto:getmycare108@gmail.com" className="hover:text-primary transition-colors">getmycare108@gmail.com</a></li>
               <li><a href="#contact" className="hover:text-primary transition-colors">Partner with us</a></li>
             </ul>
           </div>
