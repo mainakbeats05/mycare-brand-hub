@@ -71,7 +71,7 @@ export const Ecosystem = () => {
           {/* connector line */}
           <div className="hidden md:block absolute top-32 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-6 lg:gap-8 pt-4">
             {platforms.map((p, i) => (
               <motion.div
                 key={p.label}
@@ -79,7 +79,7 @@ export const Ecosystem = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
-                className={`relative bg-card rounded-3xl p-8 border transition-all hover:-translate-y-1 ${
+                className={`relative bg-card rounded-3xl p-6 sm:p-8 border transition-all hover:-translate-y-1 ${
                   p.featured
                     ? "border-primary/30 shadow-elevated md:scale-105"
                     : "border-border/50 shadow-card hover:shadow-elevated"
