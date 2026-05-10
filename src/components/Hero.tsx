@@ -145,7 +145,7 @@ export const Hero = () => {
               transition={{ duration: 7, repeat: Infinity, delay: 0.5 }}
               className="absolute -bottom-4 -right-4 glass shadow-card rounded-2xl px-4 py-3 flex items-center gap-3"
             >
-              <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center text-xl">🇮🇳</div>
+              <div className="w-10 h-10 rounded-xl bg-white shadow-sm ring-1 ring-border flex items-center justify-center text-lg leading-none">🇮🇳</div>
               <div>
                 <div className="text-xs text-muted-foreground">Trusted by</div>
                 <div className="text-sm font-semibold">Modern India</div>
