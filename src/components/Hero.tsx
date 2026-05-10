@@ -145,7 +145,13 @@ export const Hero = () => {
               transition={{ duration: 7, repeat: Infinity, delay: 0.5 }}
               className="absolute -bottom-4 -right-4 glass shadow-card rounded-2xl px-4 py-3 flex items-center gap-3"
             >
-              <div className="w-10 h-10 rounded-xl bg-white shadow-sm ring-1 ring-border flex items-center justify-center text-lg leading-none">🇮🇳</div>
+              <div className="w-10 h-10 rounded-md overflow-hidden ring-1 ring-border shadow-sm flex flex-col">
+                <div className="flex-1 bg-[#FF9933]" />
+                <div className="flex-1 bg-white flex items-center justify-center">
+                  <div className="w-2 h-2 rounded-full border border-[#000080]" />
+                </div>
+                <div className="flex-1 bg-[#138808]" />
+              </div>
               <div>
                 <div className="text-xs text-muted-foreground">Trusted by</div>
                 <div className="text-sm font-semibold">Modern India</div>
