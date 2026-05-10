@@ -148,7 +148,22 @@ export const Hero = () => {
               <div className="w-10 h-10 rounded-md overflow-hidden ring-1 ring-border shadow-sm flex flex-col">
                 <div className="flex-1 bg-[#FF9933]" />
                 <div className="flex-1 bg-white flex items-center justify-center">
-                  <div className="w-2 h-2 rounded-full border border-[#000080]" />
+                  <svg viewBox="0 0 100 100" className="w-3.5 h-3.5" aria-hidden="true">
+                    <g fill="none" stroke="#000080" strokeWidth="6">
+                      <circle cx="50" cy="50" r="45" />
+                      <circle cx="50" cy="50" r="8" fill="#000080" stroke="none" />
+                      {Array.from({ length: 24 }).map((_, i) => (
+                        <line
+                          key={i}
+                          x1="50"
+                          y1="50"
+                          x2={50 + 42 * Math.cos((i * Math.PI) / 12)}
+                          y2={50 + 42 * Math.sin((i * Math.PI) / 12)}
+                          strokeWidth="3"
+                        />
+                      ))}
+                    </g>
+                  </svg>
                 </div>
                 <div className="flex-1 bg-[#138808]" />
               </div>
